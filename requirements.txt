@@ -1,0 +1,13 @@
+langchain
+langchain_community 
+langchain_huggingface
+chromadb
+langchain_openai
+google
+generativeai
+google-generativeai
+google-cloud-bigquery
+google-cloud-bigquery-storage
+sqlalchemy-bigquery
+fastapi
+
