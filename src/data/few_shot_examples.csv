@@ -1,0 +1,4 @@
+input;output
+What is the number of clients deleted but not anonymized?;  SELECT COUNT(*) AS deleted_clients_count FROM clientDigitalAccount WHERE status = 'Deleted' AND clientNumber IS NOT NULL;
+What is the number of failed logins for lmes?;SELECT COUNT(*) AS failed_logins_count FROM clientAuthenticationAttempt WHERE status = 'failed' AND BU = 'LMES';
+How many pre signups for lmfr?; SELECT COUNT(*) AS presignup_count FROM clientDigitalAccount WHERE status = 'Pre-created' AND BU = 'LMFE';

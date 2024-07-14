@@ -1,5 +1,6 @@
 from langchain_huggingface import HuggingFacePipeline
 from langchain_openai import ChatOpenAI
+from langchain_google_genai import GoogleGenerativeAI
 from llm.lmstudio_local_server import LMStudioLLM
 from .config import get_device_map
 from llm.google import GoogleLLM
@@ -30,10 +31,11 @@ class LLMModel():
         return self.__hf_build(model_id, get_device_map(15))
 
     def google(self, model_id="models/text-bison-001"):
-        return GoogleLLM(model_id=model_id)
+        return GoogleGenerativeAI(model=model_id,verbose=True)
+        #return GoogleLLM(model_id=model_id)
 
     def openai(self, model_id="gpt-3.5-turbo"):
-        return ChatOpenAI(model=model_id)
+        return ChatOpenAI(model=model_id,verbose=True)
 
     def lmstudio(self):
         return LMStudioLLM(endpoint="http://localhost:1234/v1/completions")
