@@ -1,4 +1,4 @@
-# CIAM Data Text2SQL Project
+# LLM Text2SQL Project
 
 ## Overview
 
@@ -13,7 +13,7 @@ Text2SQL is an advanced project designed to convert natural language queries int
 #### Installation
 1. **Clone the repository**:
     ```sh
-    git clone git@github.com:adeo/ciam-data--text2sql-api.git
+    git clone https://github.com/dinyad-prog00/llm--text2sql-chatbot-api.git
     ```
 
 2. **Create and activate a virtual environment**:
@@ -36,9 +36,7 @@ Text2SQL is an advanced project designed to convert natural language queries int
    
 5. **Place your Google Cloud Service Account Key (Only if using BigQuery)**:
 
-    Copy from Vault secrets as JSON: `cdp-ciam-admin-console/hmbu/dev/ciam-gcs-dsip.data-read`.
-    
-    Paste in JSON file and place it in the root directory as `.keys/ciam-gcs-dsip.data-read.json`.
+    Paste in JSON file and place it in the root directory  `.keys/`.
 
 6. **Running the Server**:
 
@@ -62,7 +60,7 @@ Text2SQL is an advanced project designed to convert natural language queries int
 
 1. **Clone the repository**:
     ```sh
-    git clone git@github.com:adeo/ciam-data--text2sql-api.git
+    git clone https://github.com/dinyad-prog00/llm--text2sql-chatbot-api.git
     ```
 
 2. **Create and activate a Conda environment**:
@@ -92,10 +90,7 @@ Text2SQL is an advanced project designed to convert natural language queries int
     
 
 5. **Place your Google Cloud Service Account Key (Only if using BigQuery)**:
-
-    Copy from Vault secrets as JSON: `cdp-ciam-admin-console/hmbu/dev/ciam-gcs-dsip.data-read`.
-
-    Paste in JSON file and place it in the root directory as `.keys/ciam-gcs-dsip.data-read.json`.
+    Paste in JSON file and place it in the root directory `.keys/`.
 
 6. **Running the Server**:
 
